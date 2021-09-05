@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--header>(h1{Cappacita Dev}+p{Curso oferecido pela D1 Smarkio})-->
+    <header id="header-top">
+        <h1>Contato</h1>
+        <p>Digite suas<b> Dúvidas ou Sugestões</b></p>
+    </header>
+
+    <!--nav>(ul>(li>a)*3))+div>a-->
+    <nav id="nav-top">
+        <ul>
+            <li><a href="./home.html" target="_blank">Home</a></li>
+            <li><a href="https://www.altu.com.br/login" target="_blank">ALTU</a></li>
+            <li><a href="./contato.html" target="_blank">Contato</a></li>
+        </ul>
+        <div class="usuario"><a href="" target="_blank">Usuário</a></div>
+    </nav><br>
+    <section class="section-form">
+        <main>
+            <form method="POST" action="./post_servidor.php" autocomplete="on">
+                <fieldset>
+                    <legend><b>Dados Pessoais:</b></legend>
+
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome">
+
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input id="sobrenome" type="text" name="sobrenome">
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email">
+                
+                </fieldset><br>
+
+                <fieldset>
+                    <legend><b>Preferência de Contato:</b></legend>
+
+                    <label for="Sms">SMS</label>
+                    <input class="preferencia" type="radio" id="Sms" name="preferencia_contato" value="Sms">
+
+                    <label for="Email">Email</label>
+                    <input class="preferencia" type="radio" id="Email" name="preferencia_contato" value="Email">
+
+                    <label for="Ligação">Ligação</label>
+                    <input class="preferencia" type="radio" id="Ligação" name="preferencia_contato" value="Ligação">
+                </fieldset><br>
+    
+                <fieldset>
+                    <legend><b>Questionário</b></legend>
+                    <label for="dev">Escolha uma opção:</label>
+                    <select id="dev" name="dev" size="1">
+                        <option value="Backend">Back-end</option>
+                        <option value="Frontend">Front-end</option>
+                        <option value="Fullstack">Fullstack</option>
+                        <option value="Devops">Dev-Ops</option>
+                    </select>
+                    <textarea cols="10" rows="10" name="textarea"></textarea>
+                    <input type="submit" value="Enviar formulário">
+                </fieldset><br>
+    
+                <footer>
+                    <figure>
+                        <img class="logo" src="../FCI (1).png" width=50px height=50px alt="Cappacita Dev">
+                        <figcaption>Cappacita Dev 2021</figcaption>
+                    </figure>
+                    <section>
+                        <ul>
+                            <li><a href="#">Link1</a></li>
+                            <li><a href="#">Link2</a></li>
+                            <li><a href="#">Link3</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li><a href="#">Úteis1</a></li>
+                            <li><a href="#">Úteis2</a></li>
+                            <li><a href="#">Úteis3</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li><a href="#">Link1</a></li>
+                            <li><a href="#">Link2</a></li>
+                            <li><a href="#">Link3</a></li>
+                        </ul>
+                    </section> 
+                </footer>      
+</body>
+</html>
