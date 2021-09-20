@@ -5,7 +5,7 @@ const listarMovies = async function(){
     let urls =[]
 
     for(let i = 0; i < 100; i++){
-    urls.push(`https://api.themoviedb.org/3/movie/550?api_key=30fbd0f07dc9d926b525b111417b9c03${i+1}`)
+    urls.push(`https://api.themoviedb.org/3/${i+1}`)
     }
 
     let promises = []
